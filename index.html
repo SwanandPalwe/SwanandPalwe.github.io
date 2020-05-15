@@ -1,313 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Swanand Palwe - Portfolio</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
+<title>Swanand Palwe - Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
 <body>
-    <div class="jumbotron text-center"><!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-</head>
-<body class="hm-gradient">    
-    <header>
-        <div class="card" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);background-size: 100% 100%;">
-            <div class="text-white text-center d-flex align-items-center py-5 px-4 mb-5">
-                <div>
-                    <h1 class="card-title pt-3 mb-2 font-bold mytext1"><strong>Swanand Palwe</strong></h1>
-                    <h2 class="mx-5 mb-5 mytext2">An IT professional with overall 6 years working experience in Front End Design</h2>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <!-- Skills -->
-        <section class="py-5 deep-purple text-white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">                       
-                        <h2 class="h3 text-center mb-5">Skills</h2>
-                        <h4 class="text-center">HTML5, CSS3, Bootstrap, jQuery, Javascript, Basics of PHP, MySql and Wordpress, Responsive Design, Media Query, W3C Web  Standards, SEO Standards.</h4>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Skills -->
-        <!-- Portfolio -->
-        <section class="py-5 portfolio">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">                       
-                        <h2 class="h3 text-center mb-5">Work Portfolio</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive" src="images/vnitnet.jpg" alt="vnitnet"  style="margin-left: auto;margin-right: auto;" />
-                                <div class="card-text">
-                                    <a href="https://www.vnitnet.vn/" target="new_blank"><i class="fa fa-eye"></i> Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive" src="images/Office-Mart.jpg" alt="Office Mart" style="margin-left: auto;margin-right: auto;" />
-                                <div class="card-text">
-                                    <a href="https://www.officemart.com/" target="new_blank"><i class="fa fa-eye"></i> Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Swanand<br>Palwe</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a>
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Skills</a>
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Work</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
 
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive" src="images/Office-Universe.jpg" alt="Office Universe" style="margin-left: auto;margin-right: auto;" />
-                                <div class="card-text">
-                                    <a href="https://www.officeuniverse.com/" target="new_blank"><i class="fa fa-eye"></i> Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Swanand Palwe</span>
+</header>
 
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive" src="images/Gaano.jpg" alt="Gaano" style="margin-left: auto;margin-right: auto;" />
-                                <div class="card-text">
-                                    <a href="http://gaano.wyserp.com/" target="new_blank"><i class="fa fa-eye"></i> Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive" src="images/SITS-Demo.jpg" alt="SITS Demo" style="margin-left: auto;margin-right: auto;" />
-                                <div class="card-text">
-                                    <a href="http://65.60.5.103/" target="new_blank"><i class="fa fa-eye"></i> Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive" src="images/SITS-Demo-PRO.jpg" alt="SITS Demo PRO" style="margin-left: auto;margin-right: auto;" />
-                                <div class="card-text">
-                                    <a href="http://173.236.115.55/" target="new_blank"><i class="fa fa-eye"></i> Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>UI Developer</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Work.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images/vnitnet.jpg" alt="vnitnet" style="width:100%" onclick="onClick(this)">      
+      <img src="images/Office-Universe.jpg" alt="Office Universe" style="width:100%" onclick="onClick(this)">	  
+	  <img src="images/SITS-Demo.jpg" alt="SITS Demo" style="width:100%" onclick="onClick(this)">
+	  <img src="images/sitserp.jpg" alt="sitserp" style="width:100%" onclick="onClick(this)">
+	  <img src="images/wyserp.jpg" alt="wyserp" style="width:100%" onclick="onClick(this)">
+	  <img src="images/hrsoftware.jpg" alt="hrsoftware" style="width:100%" onclick="onClick(this)">
+	  <img src="images/amrutimba.jpg" alt="amrutimba" style="width:100%" onclick="onClick(this)">
+	  <img src="images/easywater.jpg" alt="easywater" style="width:100%" onclick="onClick(this)">
+	  <img src="images/Granite-Office.jpg" alt="Granite Office" style="width:100%" onclick="onClick(this)">
+	  <img src="images/united-supply-corp.jpg" alt="united supply corp" style="width:100%" onclick="onClick(this)">
+	  <img src="images/AXCSS.jpg" alt="AXCSS" style="width:100%" onclick="onClick(this)">
+	  <img src="images/trafficop.jpg" alt="trafficop" style="width:100%" onclick="onClick(this)">
+    </div>
 
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive" src="images/sitserp.jpg" alt="sitserp" style="margin-left: auto;margin-right: auto;" />
-                                <div class="card-text">
-                                    <a href="https://www.sitserp.com/" target="new_blank"><i class="fa fa-eye"></i> Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="w3-half">
+      <img src="images/Office-Mart.jpg" alt="Office Mart" style="width:100%" onclick="onClick(this)">
+      <img src="images/Gaano.jpg" alt="Gaano" style="width:100%" onclick="onClick(this)" >
+      <img src="images/SITS-Demo-PRO.jpg" alt="SITS Demo PRO" style="width:100%" onclick="onClick(this)">
+      <img src="images/malbecho.jpg" alt="malbecho" style="width:100%" onclick="onClick(this)">
+      <img src="images/a-general.jpg" alt="a-general" style="width:100%" onclick="onClick(this)">
+      <img src="images/ATESTC.jpg" alt="ATESTC" style="width:100%" onclick="onClick(this)">
+      <img src="images/shikshak-bank-nagar.jpg" alt="shikshak bank nagar" style="width:100%" onclick="onClick(this)">
+      <img src="images/a-general-plumbing.jpg" alt="a-general-plumbing" style="width:100%" onclick="onClick(this)">
+      <img src="images/Office-Outfitters.jpg" alt="Office Outfitters" style="width:100%" onclick="onClick(this)">
+      <img src="images/san-alfanso.jpg" alt="san-alfanso" style="width:100%" onclick="onClick(this)">
+      <img src="images/traffic-police-mumbai.jpg" alt="traffic-police-mumbai" style="width:100%" onclick="onClick(this)">
+    </div>
+  </div>
 
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive" src="images/malbecho.jpg" alt="malbecho" style="margin-left: auto;margin-right: auto;" />
-                                <div class="card-text">
-                                    <a href="http://www.malbecho.com/" target="new_blank"><i class="fa fa-eye"></i> Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
 
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive" src="images/wyserp.jpg" alt="wyserp" style="margin-left: auto;margin-right: auto;" />
-                                <div class="card-text">
-                                    <a href="https://www.wyserp.com/" target="new_blank"><i class="fa fa-eye"></i> Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Skills.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p><b>HTML/HTML5</b></p>
+	<div class="w3-light-grey">
+	  <div class="w3-blue" style="height:24px;width:80%"></div>
+	</div>
+	<p><b>CSS/CSS3</b></p>
+	<div class="w3-light-grey">
+	  <div class="w3-blue" style="height:24px;width:80%"></div>
+	</div>
+	<p><b>Bootstrap</b></p>
+	<div class="w3-light-grey">
+	  <div class="w3-blue" style="height:24px;width:70%"></div>
+	</div>
+	<p><b>Jquery</b></p>
+	<div class="w3-light-grey">
+	  <div class="w3-blue" style="height:24px;width:50%"></div>
+	</div>
+	<p><b>Javascript</b></p>
+	<div class="w3-light-grey">
+	  <div class="w3-blue" style="height:24px;width:50%"></div>
+	</div>
+	<p><b>Responsive Design</b></p>
+	<div class="w3-light-grey">
+	  <div class="w3-blue" style="height:24px;width:80%"></div>
+	</div>
+	<p><b>Browser Compatibility</b></p>
+	<div class="w3-light-grey">
+	  <div class="w3-blue" style="height:24px;width:80%"></div>
+	</div>
+	<p><b>Wordpress</b></p>
+	<div class="w3-light-grey">
+	  <div class="w3-blue" style="height:24px;width:50%"></div>
+	</div>
+	<p><b>PHP / MySql</b></p>
+	<div class="w3-light-grey">
+	  <div class="w3-blue" style="height:24px;width:50%"></div>
+	</div>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>About.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>An IT professional with overall 6 years working experience in Front End Design with skills HTML5, CSS3, Bootstrap, jQuery, Javascript, Responsive Design, Media Query, Basics of PHP, MySql, Wordpress.</p>
+	<p>Converting PSD into HTML</p>
+	<p>Knowledge in making tableless website design.</p>
+	<p>Following SEO Standards in web page design.</p>
+	<p>Following W3C Standards in web page design.</p>
+	
+	<h2 class="w3-xxxlarge w3-text-red"><b>Work Experience:</b></h2>
+	<hr style="width:50px;border:5px solid red" class="w3-round">
+	<p><b>Sparken IT Solutions, Pune — </b>UI Developer</p>
+	<p>September 2015 - PRESENT</p>
+	<p><b>Paramhansa Cybernetics, Pune — </b>Web Developer</p>
+	<p>July 2013 - August 2015</p>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Please feel free to contact on below details</p>
+	<p><b style="display:inline-block;vertical-align:middle"><i class="fa fa-phone w3-xlarge"></i></b> <b style="display:inline-block;vertical-align:middle;font-size:24px;padding-left:7px;"><a href="tel:+919970999516">+919970999516</a></b></p>
+	<p><b style="display:inline-block;vertical-align:middle"><i class="fa fa-envelope w3-xlarge"></i></b> <b style="display:inline-block;vertical-align:middle;font-size:24px;padding-left:7px;"><a href="mailto:palveswanand@gmail.com">palveswanand@gmail.com</a></b></p>
+  </div>
 
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive" src="images/a-general.jpg" alt="a-general" style="margin-left: auto;margin-right: auto;" />
-                                <div class="card-text">
-                                    <a href="https://www.a-general.com/" target="new_blank"><i class="fa fa-eye"></i> Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<!-- End page content -->
+</div>
 
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive" src="images/hrsoftware.jpg" alt="hrsoftware" style="margin-left: auto;margin-right: auto;" />
-                                <div class="card-text">
-                                    <a href="https://www.hrsoftware.co.in/" target="new_blank"><i class="fa fa-eye"></i> Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
 
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive" src="images/ATESTC.jpg" alt="ATESTC" style="margin-left: auto;margin-right: auto;" />
-                                <div class="card-text">
-                                    <a href="http://atestc.com/" target="new_blank"><i class="fa fa-eye"></i> Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
 
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive" src="images/amrutimba.jpg" alt="amrutimba" style="margin-left: auto;margin-right: auto;" />
-                                <div class="card-text">
-                                    <a href="http://amrutimba.org/" target="new_blank"><i class="fa fa-eye"></i> Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive" src="images/shikshak-bank-nagar.jpg" alt="shikshak bank nagar" style="margin-left: auto;margin-right: auto;" />
-                                <div class="card-text">
-                                    <a href="http://shikshakbanknagar.com/" target="new_blank"><i class="fa fa-eye"></i> Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive" src="images/easywater.jpg" alt="easywater" style="margin-left: auto;margin-right: auto;" />
-                                <div class="card-text">
-                                    <a href="https://www.a-general.com/easywater/" target="new_blank"><i class="fa fa-eye"></i> Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive" src="images/a-general-plumbing.jpg" alt="a-general-plumbing" style="margin-left: auto;margin-right: auto;" />
-                                <div class="card-text">
-                                    <a href="https://www.ageneralplumbing.com/" target="new_blank"><i class="fa fa-eye"></i> Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive" src="images/Granite-Office.jpg" alt="Granite Office" style="margin-left: auto;margin-right: auto;" />
-                                <div class="card-text">
-                                    <a href="https://graniteoffice.com/" target="new_blank"><i class="fa fa-eye"></i> Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive" src="images/Office-Outfitters.jpg" alt="Office Outfitters" style="margin-left: auto;margin-right: auto;" />
-                                <div class="card-text">
-                                    <a href="https://www.office-outfitters.com/" target="new_blank"><i class="fa fa-eye"></i> Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive" src="images/united-supply-corp.jpg" alt="united supply corp" style="margin-left: auto;margin-right: auto;" />
-                                <div class="card-text">
-                                    <a href="https://www.unitedsupplycorp.com/" target="new_blank"><i class="fa fa-eye"></i> Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive" src="images/san-alfanso.jpg" alt="san-alfanso" style="margin-left: auto;margin-right: auto;" />
-                                <div class="card-text">
-                                    <a href="http://ret.sanalfonsoretreats.org/" target="new_blank"><i class="fa fa-eye"></i> Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive" src="images/AXCSS.jpg" alt="AXCSS" style="margin-left: auto;margin-right: auto;" />
-                                <div class="card-text">
-                                    <a href="http://axcss.com/" target="new_blank"><i class="fa fa-eye"></i> Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive" src="images/traffic-police-mumbai.jpg" alt="traffic-police-mumbai" style="margin-left: auto;margin-right: auto;" />
-                                <div class="card-text">
-                                    <a href="https://trafficpolicemumbai.maharashtra.gov.in/" target="new_blank"><i class="fa fa-eye"></i> Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="img-responsive" src="images/trafficop.jpg" alt="trafficop" style="margin-left: auto;margin-right: auto;" />
-                                <div class="card-text">
-                                    <a href="http://www.trafficop.com/" target="new_blank"><i class="fa fa-eye"></i> Visit site</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-    </main>  
 </body>
 </html>
